@@ -59,5 +59,4 @@ void HashSearch::interrupt_handler(int interrupt) {
   json_filling();
   std::cout << interrupt << std::endl;
   flag = false;
-
 }
