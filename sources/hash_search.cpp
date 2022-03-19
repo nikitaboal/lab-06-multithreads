@@ -42,7 +42,8 @@ void HashSearch::json_filling() {
   }
 }
 
-void HashSearch::start_hash_search(std::string threadsNum) {
+void HashSearch::start_hash_search(std::string threadsNum)
+{
   size_t num = std::stoi(threadsNum);
   if ((num > std::thread::hardware_concurrency()) || (num == 0))
     num = std::thread::hardware_concurrency();
@@ -58,4 +59,5 @@ void HashSearch::interrupt_handler(int interrupt) {
   json_filling();
   std::cout << interrupt << std::endl;
   flag = false;
+
 }
