@@ -37,7 +37,7 @@ find_package(nlohmann_json CONFIG REQUIRED)
 add_library(${PROJECT_NAME} STATIC
         # enum your files and delete this comment
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/hash_search.cpp
-        include/picosha2.h)
+        )
 
 add_executable(demo
         ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp

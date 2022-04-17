@@ -10,4 +10,3 @@ int main(int argc, char* argv[]) {
     hashSearch.start_hash_search("0");
   }
 }
-/////
